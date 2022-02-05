@@ -1,0 +1,90 @@
+:root {
+  --mobile-primary-heading-font-size: 3rem;
+  --mobile-secondary-heading-font-size: 2rem;
+  --mobile-normal-font-size: 1.4rem;
+  --mobile-small-font-size: 1rem;
+  --mobile-padding: 2em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .primary-heading {
+    font-size: var(--mobile-primary-heading-font-size);
+  }
+
+  .title {
+    margin: 0 auto;
+  }
+
+  .secondary-heading {
+    font-size: var(--mobile-primary-heading-font-size);
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  textarea,
+  input {
+    font-size: var(--mobile-normal-font-size);
+  }
+
+  .flex-item > label {
+    font-size: var(--mobile-secondary-heading-font-size);
+  }
+
+  #profile-img {
+    width: 10em;
+  }
+
+  .container {
+    text-align: center;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 2em;
+  }
+
+  .header {
+    padding: var(--mobile-padding);
+    padding-bottom: 0;
+    display: flex;
+    width: calc(100% - 4em);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-button {
+    text-decoration: none;
+    background-color: blue;
+    font-size: var(--mobile-normal-font-size);
+    color: white;
+    padding: 10px;
+
+    margin: 0;
+
+    height: 1em;
+  }
+
+  #button-actions {
+    align-self: center;
+    width: 100%;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

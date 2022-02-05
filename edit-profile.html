@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./edit-profile-styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h2 class="primary-heading">Edit Profile</h2>
+        </div>
+        <div class="profile-title flex-item">
+            <label for="profile-title-input">Title</label>
+            <input type="text" name="profile-title" id="profile-title-input">
+        </div>
+        <div class="story flex-item">
+            <label for="story-input">Story</label>
+            <textarea name="story" id="story-input" cols="22" rows="10"></textarea>
+        </div>
+        <div class="donations flex-item">
+            <label for="donation-link">Donation URL</label>
+            <input type="url" name="donation-link" id="donation-link">
+        </div>
+        <div class="photos flex-item">
+            <label for="image-upload">Profile Images</label>
+            <div id="image-upload">
+                <img src="./BlankHeadshot.jpg" id="profile-img" alt="">
+            </div>
+        </div>
+        <div class="flex-item" id="button-actions">
+            <a href="#" class="form-button">Back</a>
+            <a href="#" class="form-button">Save Changes</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
