@@ -1,0 +1,102 @@
+:root {
+  --mobile-primary-heading-font-size: 1rem;
+  --mobile-secondary-heading-font-size: 2rem;
+  --mobile-normal-font-size: 1.1rem;
+  --mobile-small-font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .primary-heading {
+    font-size: var(--mobile-primary-heading-font-size);
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .secondary-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--mobile-primary-heading-font-size);
+  }
+
+  #logo-img {
+    width: 100px;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    gap: calc(100vh / 8);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .primary-flex-item {
+    width: 100%;
+  }
+
+  #register-form {
+    background-color: lightgray;
+    border-radius: 3px;
+    padding: 0.5em;
+  }
+
+  .form-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--mobile-normal-font-size);
+    margin-bottom: 20px;
+  }
+
+  .form-field input {
+    /* font-size: var(--mobile-normal-font-size); */
+    font-size: 1.3rem;
+  }
+
+  .form-button {
+    text-decoration: none;
+    background-color: blue;
+    font-size: var(--mobile-secondary-heading-font-size);
+    color: white;
+    padding: 10px;
+    width: 40%;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  #login-actions {
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #button-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-button {
+    margin: 0 10px 0 10px;
+  }
+
+  #forgot-password {
+    font-size: var(--mobile-small-font-size);
+  }
+
+  #confirm-password-div {
+    display: flex;
+  }
+  #confirm-password-div label {
+    text-align: left;
+  }
+}
